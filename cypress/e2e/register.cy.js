@@ -6,7 +6,7 @@ import { errorMessages } from "../../src/components/Register";
 
 describe('Register Page', () => {
   describe('Error Message', () => {
-    it('Name input throws error for 2 chars', () => {
+    it('Name input throws error for 2 chars.', () => {
       //Arrange
       //cy.visit('http://localhost:5180/');
       //Act
@@ -15,7 +15,7 @@ describe('Register Page', () => {
       //assert
       cy.contains(errorMessages.ad);
     });
-    it('Surname input throws error for 2 chars', () => {
+    it('Surname input throws error for 2 chars.', () => {
       //Arrange
       //cy.visit('http://localhost:5180/');
       //Act
@@ -52,7 +52,7 @@ describe('Register Page', () => {
       cy.get('[data-cy="submit-button"]').should("be.disabled")
     });
   });
-  describe('Form inputs validated', () => {
+  describe('Form inputs validated.', () => {
     it('button enabled for validated inputs', () => {
       //Arrange
       //cy.visit('http://localhost:5180/');
@@ -64,7 +64,7 @@ describe('Register Page', () => {
       //assert
       cy.get('[data-cy="submit-button"]').should("not.be.disabled")
     });
-    it('submits form n validated inputs', () => {
+    it('submits form n validated inputs.', () => {
       //Arrange
       //cy.visit('http://localhost:5180/');
       //Act
